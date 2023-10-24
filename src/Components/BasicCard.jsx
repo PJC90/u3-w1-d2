@@ -9,9 +9,9 @@ function BasicCard() {
       <Row>
       {history.map((book)=>{
         return(
-          
-            <Col md={3} className="mb-5">
-          <Card  key={book.asin}>
+          // la KEY va messa sempre sul suo elemento PRINCIPALE!!!! se no ti darà errore!
+            <Col md={3} className="mb-5" key={book.asin}>
+          <Card  >
             <Card.Img variant="top" src={book.img} />
             <Card.Body>
               <Card.Title>{book.title}</Card.Title>
