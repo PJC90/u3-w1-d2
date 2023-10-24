@@ -9,9 +9,8 @@ const MyFooter = () => {
       <Container fluid className='bg-dark text-white py-5'>
         <Container >
        <Row className='text-center'>
-        <Col>Chi Siamo</Col>
-        <Col>Lavora con noi</Col>
-        <Col>Contatti</Col>
+        <Col><strong>EPICODE</strong> - Copyright {new Date().getFullYear()}</Col>
+        
        </Row>
        </Container>
       </Container>
